@@ -1,16 +1,18 @@
 #!/usr/bin/env python3
 
 import os
-import shutil
-import csv
+
 import sys
 import subprocess
-import pandas as pd
+
 import socket
 
 #install req packages:
 subprocess.check_call([sys.executable, '-r', 'pip', 'install', 'requirements.txt'])
 
+import shutil
+import csv
+import pandas as pd
 
 inp = input('Please provide the name of the csv with the data(dont include the .csv)')
 text_file_path = inp + '_data.txt'
