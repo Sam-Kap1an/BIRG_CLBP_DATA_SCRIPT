@@ -2,7 +2,6 @@
 
 import os
 import shutil
-import conda.cli.python_api as Conda
 import csv
 import subprocess
 import pandas as pd
