@@ -28,7 +28,7 @@ def analyze_data(df):
 
 def transmit_result(api_url, result):
     try:
-        response = requests.post(api_url, json={'result': result})
+        response = requests.post(api_url, json={'result': result},headers=headers)
         if response.status_code == 200:
             print("Result transmitted successfully")
         else:
@@ -38,8 +38,9 @@ def transmit_result(api_url, result):
 
 
 if __name__ == "__main__":
-    api_url = "http://localhost:8000/api/result"  # hardcode API
-
+    api_url = "http://<your_server_ip>:8000/api/result" # hardcode API
+    headers = {'x-api-key': 'my_secret_api_key'}  # API key sent in the headers
+    data = {'result': 'test_result'}
 
     inp = input('Please provide the name of the csv with the data(dont include the .csv)')
     text_file_path = inp + '_data.txt' 
@@ -48,11 +49,9 @@ if __name__ == "__main__":
         result = analyze_data(df)
         transmit_result(api_url, result)
 
-
-
-# dlete text file after transmit
-if os.path.exists(text_file_path):
-    os.remove(text_file_path)
-    print(f'{text_file_path} deleted.')
-else:
-    print(f'{text_file_path} does not exist.')
+    # dlete text file after transmit
+    if os.path.exists(text_file_path):
+        os.remove(text_file_path)
+        print(f'{text_file_path} deleted.')
+    else:
+        print(f'{text_file_path} does not exist.')

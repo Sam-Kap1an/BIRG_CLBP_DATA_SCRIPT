@@ -1,29 +1,31 @@
 #!/usr/bin/env python3
 
-import socket
+from flask import Flask, request, jsonify
 
-# accept transmitted file data and save it
-def receive_file(save_path):
-    # set up the server to listen on localhost and port 
-    HOST, PORT = 'localhost', #port #????
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        s.bind((HOST, PORT))
-        s.listen(1)  # listen for a single connection
-        print(f'Server listening on {HOST}:{PORT}')
-        
-        conn, addr = s.accept()
-        with conn:
-            print(f'Connected by {addr}')
-            with open(save_path, 'wb') as f:  # write in binary mode
-                while True:
-                    data = conn.recv(1024)  # receive data in chunks
-                    if not data:
-                        break  # exit loop if no more data is received
-                    f.write(data)  # write received data to file
-            print(f'File saved as {save_path}.')
+app = Flask(__name__)
 
-# path to save the received file
-output_file_path = 'received_data.txt'
+# Define the API key (you can store this in environment variables in production)
+API_KEY = "my_secret_api_key"
 
-# call the function to receive the file and save it
-receive_file(output_file_path)
+# A simple decorator to check for API key
+def require_api_key(f):
+    def decorated_function(*args, **kwargs):
+        key = request.headers.get('x-api-key')  # Look for the API key in the request headers
+        if key and key == API_KEY:
+            return f(*args, **kwargs)
+        else:
+            return jsonify({"error": "Unauthorized access"}), 401
+    decorated_function.__name__ = f.__name__
+    return decorated_function
+
+@app.route('/api/result', methods=['POST'])
+@require_api_key
+def receive_result():
+    data = request.get_json()
+    if 'result' in data:
+        # Process result here
+        return jsonify({"status": "success", "message": "Result received"}), 200
+    return jsonify({"status": "error", "message": "Invalid data"}), 400
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8000)
