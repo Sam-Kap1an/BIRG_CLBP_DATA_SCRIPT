@@ -2,6 +2,7 @@
 
 from flask import Flask, request, jsonify
 import requests
+import os
 
 app = Flask(__name__)
 
@@ -28,14 +29,27 @@ def require_api_key(f):
     decorated_function.__name__ = f.__name__
     return decorated_function
 
-@app.route('/api/result', methods=['POST'])
+@app.route('/api/upload', methods=['POST'])
 @require_api_key
-def receive_result():
-    data = request.get_json()
-    if 'result' in data:
-        # Process result here
-        return jsonify({"status": "success", "message": "Result received"}), 200
-    return jsonify({"status": "error", "message": "Invalid data"}), 400
+def upload_file():
+    if 'file' not in request.files:
+        return jsonify({"status": "error", "message": "No file part"}), 400
+
+    file = request.files['file']
+    if file.filename == '':
+        return jsonify({"status": "error", "message": "No selected file"}), 400
+
+    # Read the content of the uploaded file
+    content = file.read().decode('utf-8')  # Decode the file content to string
+
+    # Define the local file path where the content will be saved
+    local_file_path = file.filename  # Save to the current directory with the original filename
+
+    # Write the content to a local file
+    with open(local_file_path, 'w', encoding='utf-8') as local_file:
+        local_file.write(content)
+
+    return jsonify({"status": "success", "message": "File received and saved", "content": content}), 200
 
 if __name__ == "__main__":
     external_ip = get_external_ip()

@@ -22,13 +22,13 @@ def load_dataset(file_path):
         return None
 
 
-def analyze_data(df):
+def analyze_data(df, file):
     #tdb
     return 
 
-def transmit_result(api_url, result):
+def transmit_result(api_url, files):
     try:
-        response = requests.post(api_url, json={'result': result},headers=headers)
+        response = requests.post(api_url, files=files,headers=headers)
         if response.status_code == 200:
             print("Result transmitted successfully")
         else:
@@ -38,16 +38,19 @@ def transmit_result(api_url, result):
 
 
 if __name__ == "__main__":
-    api_url = "http://<your_server_ip>:8000/api/result" # hardcode API
+    api_url = "http://<your_server_ip>:8000/api/upload" # hardcode API
     headers = {'x-api-key': '440dc1aa436f397a6f07439e21f40b25'}  # API key sent in the headers
     data = {'result': 'test_result'}
+    
 
     inp = input('Please provide the name of the csv with the data(dont include the .csv)')
-    text_file_path = inp + '_data.txt' 
-    df = load_dataset(text_file_path)
+    text_file_path = inp + '_data.txt'
+    files = {'file': open(text_file_path, 'rb')} 
+
+    df = load_dataset(inp + '.csv')
     if df is not None:
-        result = analyze_data(df)
-        transmit_result(api_url, result)
+        analyze_data(df, text_file_path)
+        transmit_result(api_url, text_file_path)
 
     # dlete text file after transmit
     if os.path.exists(text_file_path):
