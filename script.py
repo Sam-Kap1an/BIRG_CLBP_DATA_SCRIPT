@@ -5,35 +5,50 @@ import os
 import sys
 import subprocess
 
-import socket
-
 #install req packages:
-subprocess.check_call([sys.executable, '-r', 'pip', 'install', 'requirements.txt'])
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', '-r', 'requirements.txt'])
 
-import shutil
-import csv
+import requests
 import pandas as pd
 
-inp = input('Please provide the name of the csv with the data(dont include the .csv)')
-text_file_path = inp + '_data.txt'
-
-# run data analysis each time writting to a file
-df = pd.read_csv(inp+'.csv')
 
 
+def load_dataset(file_path):
+    try:
+        df = pd.read_csv(file_path)
+        return df
+    except Exception as e:
+        print(f"Error loading dataset: {e}")
+        return None
 
-#transmit the data using sockets
-def transmit_file(file_path):
-    HOST, PORT = 'localhost', #IP/port??
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        s.connect((HOST, PORT))
-        # open text file and send contents
-        with open(file_path, 'rb') as f:
-            data = f.read()
-            s.sendall(data)
-    print(f'Transmitted {file_path}.')
 
-transmit_file(text_file_path)
+def analyze_data(df):
+    #tdb
+    return 
+
+def transmit_result(api_url, result):
+    try:
+        response = requests.post(api_url, json={'result': result})
+        if response.status_code == 200:
+            print("Result transmitted successfully")
+        else:
+            print(f"Failed to transmit result: {response.status_code}")
+    except Exception as e:
+        print(f"Error transmitting result: {e}")
+
+
+if __name__ == "__main__":
+    api_url = "http://localhost:8000/api/result"  # hardcode API
+
+
+    inp = input('Please provide the name of the csv with the data(dont include the .csv)')
+    text_file_path = inp + '_data.txt' 
+    df = load_dataset(text_file_path)
+    if df is not None:
+        result = analyze_data(df)
+        transmit_result(api_url, result)
+
+
 
 # dlete text file after transmit
 if os.path.exists(text_file_path):
