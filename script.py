@@ -39,7 +39,7 @@ def transmit_result(api_url, result):
 
 if __name__ == "__main__":
     api_url = "http://<your_server_ip>:8000/api/result" # hardcode API
-    headers = {'x-api-key': 'my_secret_api_key'}  # API key sent in the headers
+    headers = {'x-api-key': '440dc1aa436f397a6f07439e21f40b25'}  # API key sent in the headers
     data = {'result': 'test_result'}
 
     inp = input('Please provide the name of the csv with the data(dont include the .csv)')
