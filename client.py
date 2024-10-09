@@ -11,6 +11,8 @@ subprocess.check_call([sys.executable, '-m', 'pip', 'install', '-r', 'requiremen
 import requests
 import pandas as pd
 
+text_file = 'sample_data.txt'
+csv_file = "CLBP_test_csv.csv"
 
 
 def load_dataset(file_path):
@@ -22,9 +24,16 @@ def load_dataset(file_path):
         return None
 
 
-def analyze_data(df, file):
-    #tdb
-    return 
+def analyze_data(csv_file_path, text_file_path):
+    
+    df = pd.read_csv(csv_file_path)
+    shape = df.shape
+    column_names = df.columns.tolist()
+    with open(text_file_path, 'w') as text_file:
+        text_file.write(f"Dataset Shape (rows, columns): {shape}\n")
+        text_file.write(f"\nColumn Names:\n{', '.join(column_names)}\n")
+
+    return text_file_path
 
 def transmit_result(api_url, files):
     try:
