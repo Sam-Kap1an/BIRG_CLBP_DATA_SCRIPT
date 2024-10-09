@@ -48,7 +48,7 @@ def transmit_result(api_url, files):
 
 if __name__ == "__main__":
     api_url = "http://<your_server_ip>:8000/api/upload" # hardcode API
-    headers = {'x-api-key': '440dc1aa436f397a6f07439e21f40b25'}  # API key sent in the headers
+    headers = {'x-api-key': ''}  # API key sent in the headers
     data = {'result': 'test_result'}
     
 

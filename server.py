@@ -6,7 +6,7 @@ import requests
 app = Flask(__name__)
 
 # Define the API key (you can store this in environment variables in production)
-API_KEY = "440dc1aa436f397a6f07439e21f40b25"
+API_KEY = ""
 
 
 def get_external_ip():
