@@ -8,7 +8,6 @@ app = Flask(__name__)
 # Define the API key (you can store this in environment variables in production)
 API_KEY = ""
 
-
 def get_external_ip():
     try:
         response = requests.get('https://api.ipify.org?format=json')
@@ -45,10 +44,18 @@ def upload_file():
     local_file_path = file.filename  # Save to the current directory with the original filename
 
     # Write the content to a local file
-    with open(local_file_path, 'w', encoding='utf-8') as local_file:
-        local_file.write(content)
+    try:
+        with open(local_file_path, 'w', encoding='utf-8') as local_file:
+            local_file.write(content)
+    except IOError as e:
+        return jsonify({"status": "error", "message": f"Failed to write file: {e}"}), 500
 
-    return jsonify({"status": "success", "message": "File received and saved", "content": content}), 200
+    return jsonify({
+        "status": "success",
+        "message": "File received and saved",
+        "filename": local_file_path,
+        "content": content
+    }), 200
 
 if __name__ == "__main__":
     external_ip = get_external_ip()
