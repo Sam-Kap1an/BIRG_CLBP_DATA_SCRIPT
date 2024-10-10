@@ -4,6 +4,7 @@ import os
 
 import sys
 import subprocess
+import time
 
 #install req packages:
 subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'setuptools'])
@@ -62,7 +63,11 @@ if __name__ == "__main__":
 
     # dlete text file after transmit
     if os.path.exists(text_file_path):
-        os.remove(text_file_path)
-        print(f'{text_file_path} deleted.')
+        time.sleep(1)  # Wait for a second
+        try:
+            os.remove(text_file_path)
+            print(f'{text_file_path} deleted.')
+        except PermissionError:
+            print(f'PermissionError: Could not delete {text_file_path}. It may still be in use.')
     else:
         print(f'{text_file_path} does not exist.')
