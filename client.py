@@ -39,7 +39,7 @@ def analyze_data(df, text_file_path):
 def transmit_result(api_url, text_file_path):
     with open(text_file_path, 'rb') as f:
         files = {'file': f}
-        response = requests.post(api_url, files=files)
+        response = requests.post(api_url, files=files,timeout=60)
         
         if response.status_code == 200:
             print("File transmitted successfully.")
@@ -48,12 +48,12 @@ def transmit_result(api_url, text_file_path):
 
 
 if __name__ == "__main__":
-    api_url = "http://##############/api/upload" # hardcode API
-    headers = {'x-api-key': '#################'}  # API key sent in the headers
+    api_url = "http://-------/api/upload" # hardcode API
+    headers = {'x-api-key': '-----------'}  # API key sent in the headers
     data = {'result': 'test_result'}
     
 
-    inp = input('Please provide the name of the csv with the data(dont include the .csv)')
+    inp = input('Please provide the name of the csv the data(dont include the .csv)')
     text_file_path = inp + '_data.txt'
 
     df = load_dataset(inp + '.csv')

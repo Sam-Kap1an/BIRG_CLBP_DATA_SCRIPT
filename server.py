@@ -14,7 +14,7 @@ def get_external_ip():
         ip_data = response.json()
         return ip_data['ip']
     except requests.RequestException as e:
-        return f"Error fetching IP: {e}"
+        return "Error fetching IP: {e}"
 
 # A simple decorator to check for API key
 def require_api_key(f):
