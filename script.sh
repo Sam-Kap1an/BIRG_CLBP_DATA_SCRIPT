@@ -16,7 +16,7 @@ if [ $? -eq 0 ]; then
     echo "Python script ran successfully. Output saved to $OUTPUT_FILE."
 
     # Copy the text file to the remote server
-    scp "$OUTPUT_FILE" "$REMOTE_USER@$REMOTE_HOST:$REMOTE_PATH"
+    scp  -i ~./ssh/clbp_birg_key "$OUTPUT_FILE" "$REMOTE_USER@$REMOTE_HOST:$REMOTE_PATH"
 
     # Check if scp was successful
     if [ $? -eq 0 ]; then
