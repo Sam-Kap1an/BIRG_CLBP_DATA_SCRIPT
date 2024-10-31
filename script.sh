@@ -9,7 +9,7 @@ REMOTE_HOST="birg.dev"
 REMOTE_PATH="~/BIRG_CLBP_DATA_SCRIPT"      
 
 # Run the Python script with the input and output file names as arguments
-python3 "$PYTHON_SCRIPT" "$INPUT_FILE" "$OUTPUT_FILE"
+python3 "~/BIRG_CLBP_DATA_SCRIPT$PYTHON_SCRIPT" "$INPUT_FILE" "$OUTPUT_FILE"
 
 # Check if Python script ran successfully
 if [ $? -eq 0 ]; then
