@@ -1,6 +1,8 @@
 #!/bin/bash
 #!/bin/bash
 
+#!/bin/bash
+
 # Variables
 PYTHON_SCRIPT="script.py"  
 REMOTE_USER="clbp"                       
@@ -8,7 +10,7 @@ REMOTE_HOST="birg.dev"
 REMOTE_PATH_TO_BIRG="BIRG_CLBP_DATA_SCRIPT" # path to save output on remote server
 
 # Prompt for necessary paths and input
-echo "Enter the local path to the current directory (where your script Sis located):"
+echo "Enter the local path to the current directory (where your script is located):"
 read LOCAL_PATH
 
 echo "Enter the path to the SSH private key file:"
@@ -17,19 +19,19 @@ read REMOTE_PATH_TO_SSHKEY
 echo "Enter the full path to the directory of the input CSV file:"
 read LOCAL_INPUT_PATH
 
-
-echo "Enter the  name of the input CSV file:"
+echo "Enter the name of the input CSV file (without .csv extension):"
 read INPUT_NAME
 
-# Full paths for script and output
+# Set output file name
+OUTPUT_FILE="${INPUT_NAME}_data.txt"  # name of the output text file
+
+# Full paths for script, input, and output
 LOCAL_SCRIPT_PATH="$LOCAL_PATH/$PYTHON_SCRIPT"
+LOCAL_INPUT_FILE="$LOCAL_INPUT_PATH/$INPUT_NAME.csv"
 LOCAL_OUTPUT_PATH="$LOCAL_PATH/$OUTPUT_FILE"
 
-
-OUTPUT_FILE="$INPUT_NAME""_data.txt"     # name of the output text file
-
 # Run the Python script with the input and output file names as arguments
-python3 "$LOCAL_SCRIPT_PATH" "$LOCAL_INPUT_PATH/$INPUT_NAME" "$LOCAL_OUTPUT_PATH"
+python3 "$LOCAL_SCRIPT_PATH" "$LOCAL_INPUT_FILE" "$LOCAL_OUTPUT_PATH"
 
 # Check if Python script ran successfully
 if [ $? -eq 0 ]; then
