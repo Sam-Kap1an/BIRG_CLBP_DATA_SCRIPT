@@ -8,7 +8,7 @@ REMOTE_HOST="birg.dev"
 REMOTE_PATH_TO_BIRG="BIRG_CLBP_DATA_SCRIPT" # path to save output on remote server
 
 # Prompt for necessary paths and input
-echo "Enter the local path to the current directory (where your script and input file are located):"
+echo "Enter the local path to the current directory (where your script Sis located):"
 read LOCAL_PATH
 
 echo "Enter the path to the SSH private key file:"
