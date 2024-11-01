@@ -4,7 +4,8 @@ import sys
 def analyze_data(df, text_file_path):
     shape = df.shape
     data_types = df.dtypes
-    missing_values = df.isnull().sum()
+    missing_values = df.isnull().sum()  # Total missing entries per column
+    missing_percent = (df.isnull().sum() / len(df)) * 100  # Percentage of missing entries per column
     summary_statistics = df.describe(include='all')
 
     with open(text_file_path, 'w') as text_file:
@@ -13,10 +14,10 @@ def analyze_data(df, text_file_path):
         text_file.write("\nColumn Names and Data Types:\n")
         for col, dtype in data_types.items():
             text_file.write(f"{col}: {dtype}\n")
-        
+
         text_file.write("\nMissing Values per Column:\n")
-        for col, missing in missing_values.items():
-            text_file.write(f"{col}: {missing}\n")
+        for col in df.columns:
+            text_file.write(f"{col}: {missing_values[col]} missing entries ({missing_percent[col]:.2f}%)\n")
 
         text_file.write("\nSummary Statistics:\n")
         text_file.write(summary_statistics.to_string())
