@@ -1,0 +1,231 @@
+Dataset Shape (rows, columns): (972, 106)
+
+Column Names and Data Types:
+C_DMAGE: float64
+SCNSEX: int64
+SCNGENIDENT: int64
+SCNGETHNIC: int64
+C_RACE: object
+SCNHHNUM: float64
+SCNHHINCOME: int64
+C_ANBMICAT: object
+C_PCLENGTH: float64
+SCNLBPDF01: int64
+SCNBPUNEMP: int64
+BP1PAININ9: int64
+BP1PAININ22: int64
+BP1PAININ31: int64
+BP1PAININ34: int64
+BP1PFA11: int64
+BP1PFA21: int64
+BP1PFA23: int64
+BP1PFA53: int64
+BP1PFC12: int64
+BP1PFB1: int64
+HS1EDDEP04: int64
+HS1EDDEP06: int64
+HS1EDDEP29: int64
+HS1EDDEP41: int64
+BP1LBPPINT1: int64
+C_PIPEGSCORE: int64
+C_MOPASS20MS: float64
+C_BEMAIANOTD: float64
+C_BEMAIAEMOT: float64
+C_BEMAIASELF: float64
+C_BEMAIAINTER: float64
+C_BEFABQS: float64
+C_BECPAQS: float64
+C_BEPCS6S: float64
+PFF4MT1: float64
+PFF4MT2: float64
+PFF2MDIS: float64
+PFFBALRT: float64
+PFFS2STIME: float64
+PFFPAINSEV: int64
+PFFARCFLX: int64
+PFFARCRET: int64
+PFFARCEXT: int64
+PFFGOWER: int64
+PFFINSTABCA: int64
+PFFREVLUM: int64
+PFFCENTRL: int64
+PFFPERIPH: int64
+PFFFLXT1: float64
+PFFFLXT2: float64
+PFFEXTT1: float64
+PFFEXTT2: float64
+PFFRFLXL4R: int64
+PFFRFLXL4L: int64
+PFFRFLXS1R: int64
+PFFRFLXS1L: int64
+PFFRFLXBSR: int64
+PFFRFLXBSL: int64
+PFFSLUMPR: int64
+PFFSLUMPL: int64
+PFFTRUNKTM: float64
+PFFSENSL3R: int64
+PFFSENSL3L: int64
+PFFSENSL4R: int64
+PFFSENSL4L: int64
+PFFSENSL5R: int64
+PFFSENSL5L: int64
+PFFSENSS1R: int64
+PFFSENSS1L: int64
+PFFMYOL2R: int64
+PFFMYOL2L: int64
+PFFMYOL3R: int64
+PFFMYOL3L: int64
+PFFMYOL4R: int64
+PFFMYOL4L: int64
+PFFMYOL5R: int64
+PFFMYOL5L: int64
+PFFMYOS1R: int64
+PFFMYOS1L: int64
+PFFPOPR: object
+PFFPOPL: object
+PFFPOPDEGR: float64
+PFFPOPDEGL: float64
+PFFRAISER: int64
+PFFRAISEL: int64
+PFFTOMR: int64
+PFFTOML: int64
+PFFABDUCR: int64
+PFFABDUCL: int64
+PFFPASSR: object
+PFFPASSL: object
+PFFGROINPR: object
+PFFGROINPL: object
+PFFINTROTR: float64
+PFFINTROTL: float64
+PFFEXTROTR: float64
+PFFEXTROTRL: float64
+PFFPLFLXR: int64
+PFFPLFLXL: int64
+PFFHIPMUSCR: int64
+PFFHIPMUSCL: int64
+PFFPRONEINS: int64
+PFFDOMPNOTH: object
+PFFMECHAN: int64
+MEANKA2DSVAMAX: float64
+
+Missing Values per Column:
+C_DMAGE: 0 missing entries (0.00%)
+SCNSEX: 0 missing entries (0.00%)
+SCNGENIDENT: 0 missing entries (0.00%)
+SCNGETHNIC: 0 missing entries (0.00%)
+C_RACE: 0 missing entries (0.00%)
+SCNHHNUM: 0 missing entries (0.00%)
+SCNHHINCOME: 0 missing entries (0.00%)
+C_ANBMICAT: 0 missing entries (0.00%)
+C_PCLENGTH: 0 missing entries (0.00%)
+SCNLBPDF01: 0 missing entries (0.00%)
+SCNBPUNEMP: 0 missing entries (0.00%)
+BP1PAININ9: 0 missing entries (0.00%)
+BP1PAININ22: 0 missing entries (0.00%)
+BP1PAININ31: 0 missing entries (0.00%)
+BP1PAININ34: 0 missing entries (0.00%)
+BP1PFA11: 0 missing entries (0.00%)
+BP1PFA21: 0 missing entries (0.00%)
+BP1PFA23: 0 missing entries (0.00%)
+BP1PFA53: 0 missing entries (0.00%)
+BP1PFC12: 0 missing entries (0.00%)
+BP1PFB1: 0 missing entries (0.00%)
+HS1EDDEP04: 0 missing entries (0.00%)
+HS1EDDEP06: 0 missing entries (0.00%)
+HS1EDDEP29: 0 missing entries (0.00%)
+HS1EDDEP41: 0 missing entries (0.00%)
+BP1LBPPINT1: 0 missing entries (0.00%)
+C_PIPEGSCORE: 0 missing entries (0.00%)
+C_MOPASS20MS: 0 missing entries (0.00%)
+C_BEMAIANOTD: 0 missing entries (0.00%)
+C_BEMAIAEMOT: 0 missing entries (0.00%)
+C_BEMAIASELF: 0 missing entries (0.00%)
+C_BEMAIAINTER: 0 missing entries (0.00%)
+C_BEFABQS: 0 missing entries (0.00%)
+C_BECPAQS: 0 missing entries (0.00%)
+C_BEPCS6S: 0 missing entries (0.00%)
+PFF4MT1: 0 missing entries (0.00%)
+PFF4MT2: 0 missing entries (0.00%)
+PFF2MDIS: 0 missing entries (0.00%)
+PFFBALRT: 0 missing entries (0.00%)
+PFFS2STIME: 0 missing entries (0.00%)
+PFFPAINSEV: 0 missing entries (0.00%)
+PFFARCFLX: 0 missing entries (0.00%)
+PFFARCRET: 0 missing entries (0.00%)
+PFFARCEXT: 0 missing entries (0.00%)
+PFFGOWER: 0 missing entries (0.00%)
+PFFINSTABCA: 0 missing entries (0.00%)
+PFFREVLUM: 0 missing entries (0.00%)
+PFFCENTRL: 0 missing entries (0.00%)
+PFFPERIPH: 0 missing entries (0.00%)
+PFFFLXT1: 0 missing entries (0.00%)
+PFFFLXT2: 0 missing entries (0.00%)
+PFFEXTT1: 0 missing entries (0.00%)
+PFFEXTT2: 0 missing entries (0.00%)
+PFFRFLXL4R: 0 missing entries (0.00%)
+PFFRFLXL4L: 0 missing entries (0.00%)
+PFFRFLXS1R: 0 missing entries (0.00%)
+PFFRFLXS1L: 0 missing entries (0.00%)
+PFFRFLXBSR: 0 missing entries (0.00%)
+PFFRFLXBSL: 0 missing entries (0.00%)
+PFFSLUMPR: 0 missing entries (0.00%)
+PFFSLUMPL: 0 missing entries (0.00%)
+PFFTRUNKTM: 0 missing entries (0.00%)
+PFFSENSL3R: 0 missing entries (0.00%)
+PFFSENSL3L: 0 missing entries (0.00%)
+PFFSENSL4R: 0 missing entries (0.00%)
+PFFSENSL4L: 0 missing entries (0.00%)
+PFFSENSL5R: 0 missing entries (0.00%)
+PFFSENSL5L: 0 missing entries (0.00%)
+PFFSENSS1R: 0 missing entries (0.00%)
+PFFSENSS1L: 0 missing entries (0.00%)
+PFFMYOL2R: 0 missing entries (0.00%)
+PFFMYOL2L: 0 missing entries (0.00%)
+PFFMYOL3R: 0 missing entries (0.00%)
+PFFMYOL3L: 0 missing entries (0.00%)
+PFFMYOL4R: 0 missing entries (0.00%)
+PFFMYOL4L: 0 missing entries (0.00%)
+PFFMYOL5R: 0 missing entries (0.00%)
+PFFMYOL5L: 0 missing entries (0.00%)
+PFFMYOS1R: 0 missing entries (0.00%)
+PFFMYOS1L: 0 missing entries (0.00%)
+PFFPOPR: 0 missing entries (0.00%)
+PFFPOPL: 0 missing entries (0.00%)
+PFFPOPDEGR: 0 missing entries (0.00%)
+PFFPOPDEGL: 0 missing entries (0.00%)
+PFFRAISER: 0 missing entries (0.00%)
+PFFRAISEL: 0 missing entries (0.00%)
+PFFTOMR: 0 missing entries (0.00%)
+PFFTOML: 0 missing entries (0.00%)
+PFFABDUCR: 0 missing entries (0.00%)
+PFFABDUCL: 0 missing entries (0.00%)
+PFFPASSR: 0 missing entries (0.00%)
+PFFPASSL: 0 missing entries (0.00%)
+PFFGROINPR: 0 missing entries (0.00%)
+PFFGROINPL: 0 missing entries (0.00%)
+PFFINTROTR: 0 missing entries (0.00%)
+PFFINTROTL: 0 missing entries (0.00%)
+PFFEXTROTR: 0 missing entries (0.00%)
+PFFEXTROTRL: 0 missing entries (0.00%)
+PFFPLFLXR: 0 missing entries (0.00%)
+PFFPLFLXL: 0 missing entries (0.00%)
+PFFHIPMUSCR: 0 missing entries (0.00%)
+PFFHIPMUSCL: 0 missing entries (0.00%)
+PFFPRONEINS: 0 missing entries (0.00%)
+PFFDOMPNOTH: 0 missing entries (0.00%)
+PFFMECHAN: 0 missing entries (0.00%)
+MEANKA2DSVAMAX: 0 missing entries (0.00%)
+
+Summary Statistics:
+           C_DMAGE      SCNSEX  SCNGENIDENT  SCNGETHNIC C_RACE    SCNHHNUM  SCNHHINCOME                    C_ANBMICAT  C_PCLENGTH  SCNLBPDF01  SCNBPUNEMP  BP1PAININ9  BP1PAININ22  BP1PAININ31  BP1PAININ34    BP1PFA11    BP1PFA21   BP1PFA23    BP1PFA53    BP1PFC12     BP1PFB1  HS1EDDEP04  HS1EDDEP06  HS1EDDEP29  HS1EDDEP41  BP1LBPPINT1  C_PIPEGSCORE  C_MOPASS20MS  C_BEMAIANOTD  C_BEMAIAEMOT  C_BEMAIASELF  C_BEMAIAINTER   C_BEFABQS   C_BECPAQS   C_BEPCS6S     PFF4MT1     PFF4MT2      PFF2MDIS    PFFBALRT  PFFS2STIME  PFFPAINSEV   PFFARCFLX   PFFARCRET   PFFARCEXT    PFFGOWER  PFFINSTABCA   PFFREVLUM   PFFCENTRL   PFFPERIPH    PFFFLXT1    PFFFLXT2    PFFEXTT1    PFFEXTT2  PFFRFLXL4R  PFFRFLXL4L  PFFRFLXS1R  PFFRFLXS1L  PFFRFLXBSR  PFFRFLXBSL   PFFSLUMPR   PFFSLUMPL  PFFTRUNKTM  PFFSENSL3R  PFFSENSL3L  PFFSENSL4R  PFFSENSL4L  PFFSENSL5R  PFFSENSL5L  PFFSENSS1R  PFFSENSS1L   PFFMYOL2R   PFFMYOL2L   PFFMYOL3R   PFFMYOL3L   PFFMYOL4R   PFFMYOL4L   PFFMYOL5R   PFFMYOL5L   PFFMYOS1R   PFFMYOS1L PFFPOPR PFFPOPL  PFFPOPDEGR  PFFPOPDEGL   PFFRAISER   PFFRAISEL     PFFTOMR     PFFTOML   PFFABDUCR   PFFABDUCL PFFPASSR PFFPASSL PFFGROINPR PFFGROINPL  PFFINTROTR  PFFINTROTL  PFFEXTROTR  PFFEXTROTRL   PFFPLFLXR  PFFPLFLXL  PFFHIPMUSCR  PFFHIPMUSCL  PFFPRONEINS PFFDOMPNOTH   PFFMECHAN  MEANKA2DSVAMAX
+count   972.000000  972.000000   972.000000  972.000000    972  972.000000   972.000000                           972  972.000000  972.000000  972.000000  972.000000   972.000000   972.000000   972.000000  972.000000  972.000000  972.00000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000   972.000000    972.000000    972.000000    972.000000    972.000000    972.000000     972.000000  972.000000  972.000000  972.000000  972.000000  972.000000    972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000   972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000     972     972  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000  972.000000      972      972        972        972  972.000000  972.000000  972.000000   972.000000  972.000000  972.00000   972.000000   972.000000   972.000000         972  972.000000      972.000000
+unique         NaN         NaN          NaN         NaN      7         NaN          NaN                             8         NaN         NaN         NaN         NaN          NaN          NaN          NaN         NaN         NaN        NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN           NaN           NaN           NaN           NaN           NaN            NaN         NaN         NaN         NaN         NaN         NaN           NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN       2       2         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN        2        2          2          2         NaN         NaN         NaN          NaN         NaN        NaN          NaN          NaN          NaN          11         NaN             NaN
+top            NaN         NaN          NaN         NaN  White         NaN          NaN  Normal weight:  18.5 to 24.9         NaN         NaN         NaN         NaN          NaN          NaN          NaN         NaN         NaN        NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN           NaN           NaN           NaN           NaN           NaN            NaN         NaN         NaN         NaN         NaN         NaN           NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN     Yes     Yes         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN      Yes      Yes         No         No         NaN         NaN         NaN          NaN         NaN        NaN          NaN          NaN          NaN     Unknown         NaN             NaN
+freq           NaN         NaN          NaN         NaN    244         NaN          NaN                           205         NaN         NaN         NaN         NaN          NaN          NaN          NaN         NaN         NaN        NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN           NaN           NaN           NaN           NaN           NaN            NaN         NaN         NaN         NaN         NaN         NaN           NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN     583     525         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN      538      530        764        756         NaN         NaN         NaN          NaN         NaN        NaN          NaN          NaN          NaN         203         NaN             NaN
+mean     52.200617    1.946502     2.683128    1.341564    NaN    3.215021     6.524691                           NaN   15.390861    3.894033    1.033951    2.971193     2.885802     2.647119     2.765432    3.025720    3.398148    3.40535    3.401235    2.791152    3.190329    2.589506    2.591564    2.374486    2.436214     4.865226      4.811728     40.695302      2.383505      2.878704      2.474623       2.646862   12.868999   26.480110    5.431584   11.350329   11.051914   4597.784671   21.659506   20.875874    4.004115    0.932099    0.871399    0.951646    0.896091     0.959877    0.908436    0.906379    0.874486   73.406584   51.318827   27.759465   14.233642    3.113169    2.602881    3.130658    3.034979    0.874486    0.895062    1.774691    1.759259   31.066667    2.992798    3.062757    3.082305    3.085391    3.009259    3.022634    3.048354    3.027778    4.768519    4.124486    4.856996    4.539095    4.441358    4.046296    4.078189    3.764403    4.773663    4.078189     NaN     NaN   34.309671   36.435185    1.707819    1.712963    1.781893    1.829218    4.323045    4.411523      NaN      NaN        NaN        NaN   36.402263   34.350823   41.426955    44.091564    4.808642    4.79321     4.049383     4.379630     1.900206         NaN    2.833333        0.180507
+std      19.177524    0.813897     1.751975    1.263690    NaN    1.831204     2.992336                           NaN   15.926545    0.977652    0.911015    1.136055     1.202608     1.245367     1.230625    1.134769    1.223237    1.31234    1.276226    1.310106    1.210063    1.383741    1.321941    1.252675    1.359653     2.641533      2.644884     21.005212      1.277271      1.369738      1.300312       1.279109    6.924882   10.443685    3.222595   14.864495   13.497929   1595.209135   16.536023   27.949709    2.843314    0.831609    0.854458    0.816114    0.888481     0.901672    0.834905    0.888466    0.843395   41.005692   33.243180   22.037519   11.681716    1.548911    1.170664    1.371479    1.368624    0.890901    0.887780    0.698429    0.728744   46.685209    1.515097    1.410995    1.407430    1.405416    1.454039    1.397917    1.429686    1.428073    1.004068    1.557658    1.018431    1.326089    1.319136    1.746238    1.618017    1.890147    1.035023    1.668777     NaN     NaN   31.646180   31.375486    0.708213    0.713931    0.679069    0.682011    1.276647    1.268079      NaN      NaN        NaN        NaN   15.714488   18.671847   17.207219    12.597012    1.514913    1.47322     1.562837     1.230791     0.789556         NaN    1.390345        0.040274
+min       0.000000    1.000000     1.000000    0.000000    NaN    1.000000     1.000000                           NaN    0.250000    2.000000    0.000000    1.000000     1.000000     1.000000     1.000000    1.000000    1.000000    1.00000    1.000000    1.000000    1.000000    1.000000    1.000000    1.000000    1.000000     0.000000      0.000000      2.000000      0.000000      0.000000      0.000000       0.000000    0.000000    7.000000    0.000000    1.800000    1.600000     17.000000    0.000000    4.600000    0.000000    0.000000    0.000000    0.000000    0.000000     0.000000    0.000000    0.000000    0.000000    6.500000    2.000000  -20.000000  -12.000000    1.000000    1.000000    1.000000    1.000000    0.000000    0.000000    1.000000    1.000000    0.000000    1.000000    1.000000    1.000000    1.000000    1.000000    1.000000    1.000000    1.000000    3.000000    1.000000    3.000000    2.000000    2.000000    0.000000    1.000000    0.000000    3.000000    1.000000     NaN     NaN  -26.000000  -52.000000    1.000000    1.000000    1.000000    1.000000    2.000000    2.000000      NaN      NaN        NaN        NaN    0.000000  -10.000000    0.000000    15.000000    2.000000    2.00000     1.000000     2.000000     1.000000         NaN    1.000000       -0.022519
+25%      37.000000    1.000000     1.000000    0.000000    NaN    2.000000     4.000000                           NaN    3.500000    3.000000    0.000000    2.000000     2.000000     2.000000     2.000000    2.000000    3.000000    3.00000    3.000000    2.000000    2.000000    1.000000    1.000000    1.000000    1.000000     3.000000      3.000000     25.500000      1.500000      1.800000      1.500000       1.687500    7.000000   19.000000    3.000000    3.360000    3.100000   3956.000000    7.300000    9.700000    2.000000    0.000000    0.000000    0.000000    0.000000     0.000000    0.000000    0.000000    0.000000   40.000000   24.750000   11.000000    4.000000    2.000000    2.000000    2.000000    2.000000    0.000000    0.000000    1.000000    1.000000   13.300000    2.000000    2.000000    2.000000    2.000000    2.000000    2.000000    2.000000    2.000000    4.000000    3.000000    4.000000    4.000000    3.000000    3.000000    3.000000    2.000000    4.000000    3.000000     NaN     NaN   15.000000   17.000000    1.000000    1.000000    1.000000    1.000000    4.000000    4.000000      NaN      NaN        NaN        NaN   25.000000   21.000000   30.000000    35.000000    4.000000    4.00000     3.000000     4.000000     1.000000         NaN    2.000000        0.161474
+50%      52.000000    2.000000     2.000000    1.000000    NaN    3.000000     7.000000                           NaN    9.000000    4.000000    1.000000    3.000000     3.000000     3.000000     3.000000    3.000000    3.000000    3.00000    3.000000    3.000000    3.000000    3.000000    3.000000    2.000000    2.000000     5.000000      5.000000     41.000000      2.333333      3.000000      2.333333       2.781250   13.000000   26.000000    5.000000    4.700000    4.300000   4717.750000   18.600000   14.100000    4.000000    1.000000    1.000000    1.000000    1.000000     1.000000    1.000000    1.000000    1.000000   78.000000   51.000000   24.000000   14.000000    3.000000    2.000000    3.000000    3.000000    1.000000    1.000000    2.000000    2.000000   20.500000    2.000000    3.000000    3.000000    3.000000    3.000000    3.000000    3.000000    3.000000    5.000000    4.000000    5.000000    5.000000    5.000000    5.000000    4.000000    4.000000    5.000000    4.000000     NaN     NaN   30.000000   32.000000    2.000000    2.000000    2.000000    2.000000    4.000000    5.000000      NaN      NaN        NaN        NaN   36.000000   34.000000   41.000000    44.000000    5.000000    5.00000     4.000000     5.000000     2.000000         NaN    3.000000        0.184469
+75%      67.000000    3.000000     3.000000    3.000000    NaN    4.000000     9.000000                           NaN   24.000000    5.000000    2.000000    4.000000     4.000000     3.000000     4.000000    4.000000    4.000000    5.00000    4.000000    4.000000    4.000000    3.000000    3.000000    3.000000    3.000000     7.000000      7.000000     56.000000      3.333333      4.000000      3.500000       3.666667   18.666667   34.000000    8.000000    8.900000   11.000000   5399.000000   32.075000   20.000000    6.000000    2.000000    2.000000    2.000000    2.000000     2.000000    2.000000    2.000000    2.000000  105.000000   75.000000   42.000000   21.000000    4.000000    3.000000    5.000000    4.000000    2.000000    2.000000    2.000000    2.000000   30.900000    5.000000    4.000000    5.000000    5.000000    5.000000    4.000000    5.000000    5.000000    6.000000    5.000000    6.000000    6.000000    5.000000    5.000000    5.000000    5.000000    6.000000    5.000000     NaN     NaN   44.000000   47.000000    2.000000    2.000000    2.000000    2.000000    5.000000    5.000000      NaN      NaN        NaN        NaN   48.000000   47.000000   53.000000    54.000000    6.000000    6.00000     5.000000     5.000000     3.000000         NaN    4.000000        0.204556
+max      91.000000    3.000000     6.000000    3.000000    NaN    7.000000    10.000000                           NaN   70.000000    5.000000    2.000000    5.000000     5.000000     5.000000     5.000000    5.000000    5.000000    5.00000    5.000000    5.000000    5.000000    5.000000    5.000000    5.000000    5.000000    10.000000     10.000000     86.000000      5.000000      5.000000      5.000000       5.000000   24.000000   48.000000   12.000000   84.100000   59.700000  10668.000000   75.000000  204.700000   10.000000    2.000000    2.000000    2.000000    2.000000     2.000000    2.000000    2.000000    2.000000  150.000000  165.000000   90.000000   50.000000    6.000000    5.000000    5.000000    5.000000    2.000000    2.000000    3.000000    3.000000  358.400000    5.000000    5.000000    5.000000    5.000000    5.000000    5.000000    5.000000    5.000000    6.000000    6.000000    6.000000    6.000000    6.000000    6.000000    6.000000    6.000000    6.000000    6.000000     NaN     NaN  171.000000  160.000000    3.000000    3.000000    3.000000    3.000000    6.000000    6.000000      NaN      NaN        NaN        NaN   77.000000   92.000000   80.000000    70.000000    7.000000    7.00000     6.000000     6.000000     3.000000         NaN    5.000000        0.256081
