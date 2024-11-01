@@ -3,11 +3,24 @@ import sys
 
 def analyze_data(df, text_file_path):
     shape = df.shape
-    column_names = df.columns.tolist()
+    data_types = df.dtypes
+    missing_values = df.isnull().sum()
+    summary_statistics = df.describe(include='all')
+
     with open(text_file_path, 'w') as text_file:
         text_file.write(f"Dataset Shape (rows, columns): {shape}\n")
-        text_file.write(f"\nColumn Names:\n{', '.join(column_names)}\n")
 
+        text_file.write("\nColumn Names and Data Types:\n")
+        for col, dtype in data_types.items():
+            text_file.write(f"{col}: {dtype}\n")
+        
+        text_file.write("\nMissing Values per Column:\n")
+        for col, missing in missing_values.items():
+            text_file.write(f"{col}: {missing}\n")
+
+        text_file.write("\nSummary Statistics:\n")
+        text_file.write(summary_statistics.to_string())
+        
     return text_file_path
 
 def load_dataset(file_base_name):
