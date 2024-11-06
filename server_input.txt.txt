@@ -1,0 +1,4 @@
+/c/Users/paanderson/Documents/GitHub/BIRG_CLBP_DATA_SCRIPT
+../clbp_birg_key
+/c/Users/paanderson/Documents/GitHub/BIRG_CLBP_DATA_SCRIPT
+cleaned_synthetic_data
