@@ -1,4 +1,4 @@
 /c/Users/paanderson/Documents/GitHub/BIRG_CLBP_DATA_SCRIPT
 ../clbp_birg_key
 /c/Users/paanderson/Documents/GitHub/BIRG_CLBP_DATA_SCRIPT
-../BH_BLDATA_20240808
+cleaned_synthetic_data
